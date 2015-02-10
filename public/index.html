@@ -8,11 +8,31 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
-    <div class="container">
-      <h1>My Site Title</h1>
+    <div>
+      <h1>My Friends</h1>
+      <form action="https://blahblahfriendsapp.firebaseio.com/friends.json" method="POST">
+        <input type="text" name="photoURL" placeholder="Photo URL"/>
+        <input type="text" name="firstName" placeholder="First Name" required="required"/>
+        <input type="text" name="lastName" placeholder="Last Name" required="required"/>
+        <input type="text" maxlength="3" name="pNum1" placeholder="xxx" required="required"/> -
+        <input type="text" maxlength="3" name="pNum2" placeholder="xxx" required="required"/> -
+        <input type="text" maxlength="4" name="pNum3" placeholder="xxxx" required="required"/>
+        <input type="text" name="emailAddress" placeholder="Email Address" required="required"/>
+        <input type="submit" value="New Friend"/>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Profile Pic</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Phone Number</th>
+            <th>Eamil Address</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </div>
-
     <script src="js/main.js"></script>
   </body>
 </html>
