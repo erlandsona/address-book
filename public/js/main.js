@@ -1,3 +1,4 @@
+/* jshint jquery: true */
 'use strict';
 
 function hello() {
