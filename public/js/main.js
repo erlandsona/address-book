@@ -9,6 +9,13 @@ var FIREBASE_URL = 'https://friends-address-book.firebaseio.com';
 
 $('#submit').click(submit);
 
+
+
+function assignDataAtt (res) {
+  
+}
+
+
 function submit (event) {
   event.preventDefault();
   var contact = {
@@ -20,9 +27,7 @@ function submit (event) {
     'pNum3' : $('#pNum3').val(),
     'emailAddress' : $('#emailAddress').val()
   };
-  addContactToDb(contact, function (res) {
-    console.log(res);
-  });
+  addContactToDb(contact, assignDataAtt);
   addContactToTable(contact);
 }
 

@@ -76,24 +76,6 @@ describe('DOM', function () {
         $($tds[4]).text().should.equal('austin@erlandson.com');
       });
     });
-    describe('addContactToDb', function () {
-      it('should post form data to database', function (done) {
-        var contact     = {
-            photoURL    : 'https://www.facebook.com/photo.php?fbid=10152885693074479&l=edfeb6ec76',
-            firstName   : 'Austin',
-            lastName    : 'Erlandson',
-            pNum1       : '555',
-            pNum2       : '555',
-            pNum3       : '5555',
-            emailAddress: 'austin@erlandson.com'
-        };
-        addContactToDb(contact, function (res){
-          res.name.should.be.ok;
-          res.name.length.should.equal(20);
-          done();
-        });
-      });
-    });
     describe('retrieveFriends', function () {
       it('should clear the dom table', function () {
         retrieveFriends();
@@ -101,6 +83,16 @@ describe('DOM', function () {
       });
       it('should repopulate the dom with data from firebase', function () {
   //      retrieve
+      });
+    });
+    describe('assignDataAtt', function () {
+      it('should assign data attribute to table row', function () {
+        get uuid
+        attatch uuid
+        build row
+      });
+      it('', function () {
+        
       });
     });
   });
