@@ -10,15 +10,15 @@
   <body>
     <div>
       <h1>My Friends</h1>
-      <form action="https://blahblahfriendsapp.firebaseio.com/friends.json" method="POST">
-        <input type="text" name="photoURL" placeholder="Photo URL"/>
-        <input type="text" name="firstName" placeholder="First Name" required="required"/>
-        <input type="text" name="lastName" placeholder="Last Name" required="required"/>
-        <input type="text" maxlength="3" name="pNum1" placeholder="xxx" required="required"/> -
-        <input type="text" maxlength="3" name="pNum2" placeholder="xxx" required="required"/> -
-        <input type="text" maxlength="4" name="pNum3" placeholder="xxxx" required="required"/>
-        <input type="text" name="emailAddress" placeholder="Email Address" required="required"/>
-        <input type="submit" value="New Friend"/>
+      <form action="#">
+        <input type="text" id="photoUrl" placeholder="Photo URL"/>
+        <input type="text" id="firstName" placeholder="First Name" required="required"/>
+        <input type="text" id="lastName" placeholder="Last Name" required="required"/>
+        <input type="text" maxlength="3" id="pNum1" placeholder="xxx" required="required"/> -
+        <input type="text" maxlength="3" id="pNum2" placeholder="xxx" required="required"/> -
+        <input type="text" maxlength="4" id="pNum3" placeholder="xxxx" required="required"/>
+        <input type="email" id="emailAddress" placeholder="email@address.com" required="required"/>
+        <input type="submit" id="submit" value="New Friend"/>
       </form>
       <table>
         <thead>
@@ -30,9 +30,11 @@
             <th>Eamil Address</th>
           </tr>
         </thead>
-        <tbody></tbody>
+        <tbody id="friendList"></tbody>
       </table>
     </div>
-    <script src="js/main.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/lodash/lodash.min.js"></script>
+    <script src="../public/js/main.js"></script>
   </body>
 </html>
