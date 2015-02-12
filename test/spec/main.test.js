@@ -76,22 +76,22 @@ describe('DOM', function () {
         $($tds[4]).text().should.equal('austin@erlandson.com');
       });
     });
-    describe('retrieveFriends', function () {
-      it('should clear the dom table', function () {
-        retrieveFriends();
-        $('tr').length.should.equal(0);
-      });
-      it('should repopulate the dom with data from firebase', function () {
-  //      retrieve
-      });
-    });
-    describe('assignDataAtt', function () {
-      it('should assign data attribute to table row', function () {
-   
-      });
-      it('', function () {
-        
-      });
-    });
+ //   describe('retrieveFriends', function () {
+ //     it('should clear the dom table', function () {
+ //       retrieveFriends();
+ //       $('tr').length.should.equal(0);
+ //     });
+ //     it('should repopulate the dom with data from firebase', function () {
+ // //      retrieve
+ //     });
+ //   });
+ //   describe('assignDataAtt', function () {
+ //     it('should assign data attribute to table row', function () {
+ //  
+ //     });
+ //     it('', function () {
+ //       
+ //     });
+ //   });
   });
 });

@@ -15,9 +15,9 @@ $('#submit').click(submit);
 
 
 
-function assignDataAtt (res) {
-  
-}
+//function assignDataAtt (res) {
+//  
+//}
 
 
 function submit (event) {
