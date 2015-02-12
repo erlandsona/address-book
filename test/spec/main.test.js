@@ -87,9 +87,7 @@ describe('DOM', function () {
     });
     describe('assignDataAtt', function () {
       it('should assign data attribute to table row', function () {
-        get uuid
-        attatch uuid
-        build row
+   
       });
       it('', function () {
         
