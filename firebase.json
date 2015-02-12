@@ -1,6 +1,6 @@
 {
   "firebase": "friends-address-book",
-  "public": ".",
+  "public": "public",
   "ignore": [
     "firebase.json",
     "**/.*",
